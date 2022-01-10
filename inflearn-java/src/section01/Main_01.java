@@ -1,6 +1,7 @@
+package section01;
 import java.util.*;
 
-class Main {	
+class Main_01 {	
 	public String solution(String s){
 		String answer="NO";
 		s=s.toUpperCase().replaceAll("[^A-Z]", "");
@@ -10,7 +11,7 @@ class Main {
 	}
 
 	public static void main(String[] args){
-		Main T = new Main();
+		Main_01 T = new Main_01();
 		Scanner kb = new Scanner(System.in);
 		String str=kb.nextLine();
 		System.out.print(T.solution(str));

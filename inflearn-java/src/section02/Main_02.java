@@ -2,6 +2,8 @@ package section02;
 
 import java.util.*;
 
+// 보이는 학생
+
 public class Main_02 {
 
 		public int solution(int n, int[] arr){

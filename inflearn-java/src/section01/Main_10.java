@@ -2,7 +2,7 @@ package section01;
 
 import java.util.*;
 
-class Main {	
+class Main_10 {	
 	public int[] solution(String s, char t){
 		int[] answer=new int[s.length()];
 		int p=1000;
@@ -28,7 +28,7 @@ class Main {
 	}
 
 	public static void main(String[] args){
-		Main T = new Main();
+		Main_10 T = new Main_10();
 		Scanner kb = new Scanner(System.in);
 		String str=kb.next();
 		char c=kb.next().charAt(0);

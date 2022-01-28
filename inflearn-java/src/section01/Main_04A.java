@@ -1,12 +1,18 @@
 package section01;
 
 import java.util.*;
+
+/*	4. 단어 뒤집기 - StringBuilder 
+ */
+
 class Main_04A {	
+	
 	public ArrayList<String> solution(int n, String[] str){
-		ArrayList<String> answer=new ArrayList<>(); 
+		
+		ArrayList<String> answer = new ArrayList<>(); 
 		
 		for(String x : str){
-			String tmp=new StringBuilder(x).reverse().toString();
+			String tmp = new StringBuilder(x).reverse().toString();
 			answer.add(tmp);
 		}
 		return answer;

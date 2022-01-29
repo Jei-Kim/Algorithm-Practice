@@ -21,6 +21,7 @@ public class Main_04A {
 		}
 		
 		public static void main(String[] args){
+			
 			Main_04A T = new Main_04A();
 			Scanner kb = new Scanner(System.in);
 			int n=kb.nextInt();

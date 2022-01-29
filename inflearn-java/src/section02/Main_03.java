@@ -1,7 +1,9 @@
 package section02;
 import java.util.*;
 
-// 가위바위보
+/* 3. 가위바위보 
+ * 
+ */
 
 public class Main_03 {
 	

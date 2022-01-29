@@ -3,7 +3,8 @@ package section02;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-// 큰 수 출력하기
+/* 1. 큰 수 출력하기
+*/
 
 public class Main_01 {
 

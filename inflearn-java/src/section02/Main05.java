@@ -11,10 +11,10 @@ public class Main05 {
 			
 			for(int i=2; i<=n; i++){
 				
-				if(ch[i]==0){
+				if(ch[i] == 0){
 					cnt++;
 					
-					for(int j=i; j<=n; j=j+i) ch[j]=1;
+					for(int j = i; j <= n; j = j + i) ch[j] = 1;
 				}
 				
 			}
@@ -25,7 +25,7 @@ public class Main05 {
 			
 			Main05 T = new Main05();
 			Scanner kb = new Scanner(System.in);
-			int n=kb.nextInt();
+			int n = kb.nextInt();
 			System.out.println(T.solution(n));
 			
 		}

@@ -1,4 +1,7 @@
+package section03;
+
 import java.util.*;
+
 class Main_02 {	
 	public ArrayList<Integer> solution(int n, int m, int[] a, int[] b){
 		ArrayList<Integer> answer = new ArrayList<>();

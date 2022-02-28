@@ -1,7 +1,7 @@
 package section04;
 import java.util.*;
 
-class Main {	
+class Main_02 {	
 	public String solution(String s1, String s2){
 		String answer="YES";
 		HashMap<Character, Integer> map=new HashMap<>();
@@ -16,7 +16,7 @@ class Main {
 	}
 
 	public static void main(String[] args){
-		Main T = new Main();
+		Main_02 T = new Main_02();
 		Scanner kb = new Scanner(System.in);
 		String a=kb.next();
 		String b=kb.next();

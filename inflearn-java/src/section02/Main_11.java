@@ -1,8 +1,12 @@
 package section02;
-
 import java.util.*;
 
-public class Main11 {
+/* 11. 임시 반장 정하기
+* - 표(이차원배열) 돌면서 가장 많이 중복되는 학생 구하기 
+*/
+
+public class Main_11 {
+
 	public int solution(int n, int[][] arr) {
 
 		int answer = 0, max = 0;
@@ -14,8 +18,7 @@ public class Main11 {
 			for (int j = 1; j <= n; j++) {
 
 				for (int k = 1; k <= 5; k++) {
-
-					if (arr[i][k] == arr[j][k]) {
+					if (arr[i][k] == arr[j][k]) { // 학년과 반이 같은 경우
 						cnt++;
 						break;
 					}
@@ -32,7 +35,7 @@ public class Main11 {
 
 	public static void main(String[] args) {
 
-		Main11 T = new Main11();
+		Main_11 T = new Main_11();
 		Scanner kb = new Scanner(System.in);
 		int n = kb.nextInt();
 

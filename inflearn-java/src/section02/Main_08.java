@@ -1,8 +1,11 @@
 package section02;
-
 import java.util.*;
 
-class Main08 {	
+/* 8. 등수 구하기
+* - 주어진 점수의 등수 구해서 출력하기
+*/
+
+class Main_08 {	
 	
 	public int[] solution(int n, int[] arr){
 		
@@ -20,7 +23,7 @@ class Main08 {
 	
 	public static void main(String[] args){
 		
-		Main08 T = new Main08();
+		Main_08 T = new Main_08();
 		Scanner kb = new Scanner(System.in);
 		int n = kb.nextInt();
 		

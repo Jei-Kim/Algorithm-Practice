@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /* 1. 큰 수 출력하기
+- 자기 앞 숫자보다 큰 수만 모아서 출력
 */
 
 public class Main_01 {

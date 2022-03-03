@@ -3,17 +3,17 @@ package section02;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main06 {
+/* 6. 뒤집은 소수 - 에라토테네스 체
+ * - 입력된 자연수를 뒤집고, 뒤집은 수가 소수이면 출력 
+ */
+public class Main_06 {
 	
 		public boolean isPrime(int num){
-			
+
 			if(num == 1) return false;
-			
-			for(int i = 2; i < num; i++){
-				
+			for(int i = 2; i < num; i++){	
 				if(num % i == 0) return false;
 			}
-			
 			return true;
 		}
 
@@ -28,9 +28,9 @@ public class Main06 {
 				
 				while(tmp > 0){
 					
-					int t = tmp%10;
-					res = res*10+t;
-					tmp = tmp/10;
+					int t = tmp % 10;
+					res = res * 10 + t;
+					tmp = tmp / 10;
 				}
 				if(isPrime(res)) answer.add(res);
 			}
@@ -39,7 +39,7 @@ public class Main06 {
 		
 		public static void main(String[] args){
 			
-			Main06 T = new Main06();
+			Main_06 T = new Main_06();
 			Scanner kb = new Scanner(System.in);
 			
 			int n = kb.nextInt();

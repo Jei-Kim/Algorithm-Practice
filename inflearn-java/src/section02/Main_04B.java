@@ -3,7 +3,7 @@ package section02;
 import java.util.*;
 
 /* 4. 피보나치 수열
- * 
+ * - 배열 사용하지 않는 경우 - 바로 출력
  */
 
 public class Main_04B {

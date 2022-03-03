@@ -3,6 +3,8 @@ package section02;
 import java.util.*;
 
 /* 2. 보이는 학생 
+- 맨 앞에서 볼 때  보이는 학생의 수 구하기
+- (앞사람보다 작으면 안보인다는 조건)
 */
 
 public class Main_02 {

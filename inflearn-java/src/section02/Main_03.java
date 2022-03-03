@@ -3,7 +3,7 @@ package section02;
 import java.util.*;
 
 /* 3. 가위바위보 
- * 
+ *  - 가위바위보 이긴 사람 출력
  */
 
 public class Main_03 {
@@ -12,8 +12,9 @@ public class Main_03 {
 
 		String answer = "";
 
+	// 가위, 바위, 보 각각에 임의의 숫자 배정해서 포문 돌리기
+	// 비기는 경우 고려 주의 
 		for (int i = 0; i < n; i++) {
-
 			if (a[i] == b[i])
 				answer += "D";
 			else if (a[i] == 1 && b[i] == 3)

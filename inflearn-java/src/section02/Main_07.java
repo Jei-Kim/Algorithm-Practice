@@ -1,8 +1,10 @@
 package section02;
-
 import java.util.*;
 
-public class Main07 {
+/* 7. 점수 계산
+ * -  
+ */
+public class Main_07 {
 	
 		public int solution(int n, int[] arr){
 			
@@ -21,7 +23,7 @@ public class Main07 {
 		
 		public static void main(String[] args){
 			
-			Main07 T = new Main07();
+			Main_07 T = new Main_07();
 			Scanner kb = new Scanner(System.in);
 			
 			int n = kb.nextInt();

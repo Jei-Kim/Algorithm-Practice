@@ -3,7 +3,7 @@ package section02;
 import java.util.*;
 
 /* 4. 피보나치 수열
- * 
+ * - 앞의 2개의 수를 더해 자기자신이 되는 수열 
  */
 
 public class Main_04A {

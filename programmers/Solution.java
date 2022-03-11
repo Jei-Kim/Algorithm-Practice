@@ -1,22 +1,27 @@
 import java.util.*;
 
 public class Solution {
-    public int[] solution(int []arr) {
-        ArrayList<Integer> tempList new ArrayList<Integer>();
-        int preNum = -1;
 
-        for (int num : arr) {
-            if (preNum != num) {
-                tempList.add(num);
-                preNum = num;
-            }
+    public int[] solution(int n, int m) {
+
+        /* 최대공약수 => 유클리드 호제법 이용 */
+
+        // a > b 일 때 유클리드 호제법 성립
+        int a = Math.max(n, m);
+        int b = Math.min(n, m);
+
+        // 유클리드 공식 시작 ~
+        while(b != 0) {
+            int r = a % b;
+            a = b;
+            b = r;
         }
-        int [] answer = new int[tempList.size()];
+        // 유클리드 공식 끝
 
-        for(int i = 0; i < answer.length; i++) {
-            answer[i] = tempList.get(i).intValue();
-        }
 
-        return answer;
+        /* 최소공배수 => 주어진 두 수의 곱 / 최대공약수 */
+        return new int[] {a, n * m / a}; // 최대공약수, 최소공배수 순서대로
+
     }
+
 }

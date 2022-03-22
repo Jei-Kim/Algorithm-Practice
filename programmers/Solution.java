@@ -1,22 +1,22 @@
 class Solution {
-    int numberOfPrime(int n) {
-        int count = 0;
-        int result = 0;
+    public int[] solution(int []arr) {
+        ArrayList<Integer> tempList = new ArrayList<Integer>();
+        int preNum = -1;
 
-        for(int i = 1 ; i <= n ; i++){
-            for(int j = 1 ; j <= i ; j++){
-                if ( i % j == 0) count++;
+        for(int num : arr) {
+            if(preNum != num) {
+                tempList.add(num);
+                preNum = num;
             }
-            if(count == 2) result++;
-            count = 0;
         }
 
-        return result;
-    }
+        int[] answer = new int[tempList.size()];
 
-    public static void main(String[] args) {
-        Solution prime = new Solution();
-        System.out.println( prime.numberOfPrime(10) );
+        for(int i = 0; i < answer.length; i++) {
+            answer[i] = tempList.get(i).intValue();
+        }
+
+        return answer;
     }
 
 }

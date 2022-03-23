@@ -1,23 +1,29 @@
+package level01;
 import java.util.*;
 
 public class Solution {
     public int[] solution(int []arr) {
+    
+    // 1. 임시로 담아 놓을 리스트 선언
     ArrayList<Integer> tempList = new ArrayList<Integer>();
-    int preNum = -1; // 의미없는 수 대입해놓고
 
-    // List에 값을 넣으면서, 넣을때마다 preNum의 수를 바꾸어 줌 
-    for(int num : arr) {
-        if(preNum != num) {
-            tempList.add(num);
-            preNum = num;
+    // 2. preNum과 같지 않을 경우 임시리스트에 추가 + preNum 초기화
+    int preNum = -1;
+    for(int n : arr) {
+        if(preNum != n) {
+            tempList.add(n);
+            preNum = n;
         }
     }
-    int [] answer = new int[tempList.size()];
 
+    // 3. 리턴할 배열 선언
+    int []answer = new int[tempList.size()];
+
+    // 4. 배열에 리스트 원소 넣어서 리턴
     for(int i = 0; i < answer.length; i++) {
         answer[i] = tempList.get(i).intValue();
     }
 
     return answer;
-}
+    }
 }

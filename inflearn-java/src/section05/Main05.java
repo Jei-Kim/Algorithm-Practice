@@ -1,5 +1,4 @@
 package section05;
-
 import java.util.*;
 
 class Main05 {	

@@ -1,3 +1,5 @@
+package level01;
+
 class EvenOrOdd {
     public String solution(int num) {
 

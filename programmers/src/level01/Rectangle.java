@@ -1,4 +1,7 @@
+package level01;
+
 class Rectangle {
+    
     public int solution(int[][] sizes) {
         int max = 0;
         int min = 0;

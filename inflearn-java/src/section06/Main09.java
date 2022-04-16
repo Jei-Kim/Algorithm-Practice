@@ -1,7 +1,7 @@
 package section06;
 import java.util.*;
 
-class Main {
+class Main09 {
 	public int count(int[] arr, int capacity){
 		int cnt=1, sum=0;
 		for(int x : arr){
@@ -29,7 +29,7 @@ class Main {
 		return answer;
 	}
 	public static void main(String[] args){
-		Main T = new Main();
+		Main09 T = new Main09();
 		Scanner kb = new Scanner(System.in);
 		int n=kb.nextInt();
 		int m=kb.nextInt();

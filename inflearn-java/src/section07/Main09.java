@@ -1,6 +1,7 @@
 package section07;
 import java.util.*;
 
+//분리
 class Node{ 
     int data; 
     Node lt, rt; 

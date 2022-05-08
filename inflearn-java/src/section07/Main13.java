@@ -1,5 +1,7 @@
+package section07;
 import java.util.*;
-class Main {
+
+class Main13 {
 	static int n, m, answer=0;
 	static ArrayList<ArrayList<Integer>> graph;
 	static int[] ch;
@@ -17,7 +19,7 @@ class Main {
 	}
 	
 	public static void main(String[] args){
-		Main T = new Main();
+		Main13 T = new Main13();
 		Scanner kb = new Scanner(System.in);
 		n=kb.nextInt();
 		m=kb.nextInt();

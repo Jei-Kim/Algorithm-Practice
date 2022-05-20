@@ -2,6 +2,11 @@ package section03;
 
 import java.util.*;
 
+/* 1. 두 배열 합치기
+- 오름차순으로 정렬이 된 두 배열이 주어지면 두 배열을 오름차순으로 합쳐 출력하는 프로그램
+을 작성
+*/
+
 class Main_01 {	
 	public ArrayList<Integer> solution(int n, int m, int[] a, int[] b){
 		
@@ -22,18 +27,18 @@ class Main_01 {
 
 		Main_01 T = new Main_01();
 		Scanner kb = new Scanner(System.in);
-		int n=kb.nextInt();
-		int[] a=new int[n];
+		int n = kb.nextInt();
+		int[] a = new int[n];
 
 		for(int i=0; i<n; i++){
-			a[i]=kb.nextInt();
+			a[i] = kb.nextInt();
 		}
 
-		int m=kb.nextInt();
-		int[] b=new int[m];
+		int m = kb.nextInt();
+		int[] b = new int[m];
 
 		for(int i=0; i<m; i++){
-			b[i]=kb.nextInt();
+			b[i] = kb.nextInt();
 		}
         
 		for(int x : T.solution(n, m, a, b)) System.out.print(x+" ");

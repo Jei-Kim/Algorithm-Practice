@@ -1,6 +1,11 @@
 package section03;
-
 import java.util.*;
+
+/*
+2. 공통원소 구하기
+- A, B 두 개의 집합이 주어지면 두 집합의 공통 원소를 추출하여 오름차순으로 출력하는 프로
+그램을 작성
+*/
 
 class Main_02 {	
 	public ArrayList<Integer> solution(int n, int m, int[] a, int[] b){

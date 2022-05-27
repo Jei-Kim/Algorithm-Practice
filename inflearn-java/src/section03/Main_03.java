@@ -1,6 +1,9 @@
 package section03;
-
 import java.util.*;
+
+/* 3. 최대 매출
+- N일 동안의 매출기록을 주고 연속된 K일 동안의 최대 매출액이 얼마인지 구하기
+*/
 
 class Main_03 {	
 	public int solution(int n, int k, int[] arr){

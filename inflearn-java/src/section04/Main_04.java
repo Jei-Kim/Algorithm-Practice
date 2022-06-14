@@ -1,6 +1,11 @@
 package section04;
 import java.util.*;
 
+/*
+4. 모든 아나그램 찾기(해쉬, 투포인터, 슬라이딩 윈도우)
+- S문자열에서 T문자열과 아나그램이 되는 S의 부분문자열의 개수 구하기
+*/
+
 class Main_04 {	
 	public int solution(String a, String b){
 		int answer=0;

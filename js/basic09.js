@@ -21,7 +21,7 @@ let showError = () => {
 //화살표 함수2
 
 //변경 전
-const sayHello = function (name) {
+const sayHello1 = function (name) {
     const msg = 'Hello, ${name}';
     console.log(msg);
 };
@@ -33,7 +33,7 @@ const sayHello = (name) => {
 };
 
 //변경 전
-const add = function (num1, num2) {
+const add1 = function (num1, num2) {
     const result = num1 + num2;
     return result;
 }

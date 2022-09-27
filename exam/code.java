@@ -40,3 +40,87 @@ public class Test2 {
 /* 출력결과
 e1 l2 i3
 */
+
+/* 3. JAVA의 클래스 */
+// ex1
+class ClassA {
+    int a = 10;
+    int funcAdd(int x, int y) {
+        return x + y + a;
+    }
+}
+public class Test {
+    public static void main(String[] args) {
+        int x = 3, y = 6, r;
+        ClassA cal = new ClassA();
+        r = cal.funcAdd(x,y);
+        System.out.print(r);
+    }
+}
+/* 출력결과
+19
+*/
+
+//ex2
+class ClassA {
+    ClassA() {
+    System.out.print('A'); //1
+    this.prn();
+}
+void prn() {
+        System.out.print('B');
+    }
+}
+class ClassB extends ClassA {
+    ClassB() {
+        super();
+        System.out.print('D'); //3
+}
+void prn() {
+        System.out.print('E'); //2
+    }
+void prn() {
+        System.out.print(x);//4
+    }  
+}
+
+public class Test {
+    public static void main(String[] args) {
+        int x = 7;
+        ClassB cal = new ClassB();
+        cal.prn(x);
+    }
+}
+/* 출력결과
+AED7
+*/
+
+/* 4. JAVA의 형변환 */
+abstract class Animal {
+    String a = " is animal";
+    abstract void look();
+        void show() {
+            System.out.println("Zoo");
+        }
+}
+class Chicken extends Animal {
+    Chicken() {
+        look();
+    }
+    void look() {
+        System.out.println("Chicken"+a);
+    }
+    void display() {
+        System.out.println("two wings");
+    }
+}
+public class Test {
+    public static void main(String [] args) {
+        Animal a = new Chicken();
+        a.show();
+    }
+}
+/* 출력결과
+Chicken is animal
+Zoo
+*/

@@ -95,7 +95,7 @@ public class Test {
 AED7
 */
 
-/* 4. JAVA의 형변환 */
+/* 4. JAVA의 활용 */
 abstract class Animal {
     String a = " is animal";
     abstract void look();

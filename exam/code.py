@@ -6,20 +6,27 @@
         # - 세미콜론 사용 x
         # - if나 for와 같이 코드 블록을 포함하는 명령문을 작성할 때 중괄호 대신 콜론과 여백으로 구분한다.
         
-# 문제1: 결과 => 789,xyz
-x = input('입력:' )
+# 문제1: 
+x = input('입력:' ) # xyz321
 a = [ 'abc123', 'def456', 'ghi789' ]
 a.append(x)
 a.remove('def456')
 print(a[1][-3:]), a[2][:-3], sep = ',')
-for i in range(3, 6):
-    print(i, end = ' ')
+for i in range(3, 6): # 마지막 값 전까지
+    print(i, end = ' ') # 값 출력 후 종료문자로 '' 공백 출력 -> 반복
+# 결과 => 789,xyz
 
-# 문제2: 결과 => apple
+# 문제2: 
 a = {'apple', 'lemon', 'banana'}
-a.update({ 'kiwi', 'banana'})
+a.update({ 'kiwi', 'banana'}) #새로운 요소 추가(이미 있는 요소 제외하고 추가됨)
 a.remove('lemon')
-a.add('apple')
+a.add('apple') #새로운 요소 추가(이미 있는 요소 제외하고 추가됨)
 for i in a:
     print(i)
+# '''
+#  결과
+#  apple
+#  banana
+#  kiwi
+#  '''
 
